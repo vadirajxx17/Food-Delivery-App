@@ -1,0 +1,137 @@
+.admin-page {
+    min-height: 100vh;
+    padding: 40px 7%;
+    box-sizing: border-box;
+    background: #f5f7fb;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-header {
+    margin-bottom: 24px;
+}
+
+.admin-eyebrow {
+    margin: 0 0 6px;
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.admin-navbar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dbe1ea;
+}
+
+.admin-navbar button {
+    padding: 12px 18px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin-navbar button.active {
+    border-bottom-color: #4f46e5;
+    color: #3730a3;
+}
+
+.admin-card {
+    max-width: 760px;
+    padding: 28px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.admin-card h2 {
+    margin: 0 0 22px;
+    font-size: 22px;
+}
+
+.admin-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.admin-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-form input {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 11px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.admin-form input:focus {
+    border-color: #4f46e5;
+    outline: 2px solid rgba(79, 70, 229, 0.16);
+}
+
+.admin-form > button {
+    grid-column: 1 / -1;
+    justify-self: start;
+    min-height: 42px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admin-form > button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.admin-feedback {
+    margin: 0 0 18px;
+    font-size: 14px;
+}
+
+.admin-feedback.success {
+    color: #166534;
+}
+
+.admin-feedback.error {
+    color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+    .admin-page {
+        padding: 28px 5%;
+    }
+
+    .admin-card {
+        padding: 20px;
+    }
+
+    .admin-form {
+        grid-template-columns: 1fr;
+    }
+}
